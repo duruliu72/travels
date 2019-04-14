@@ -1,22 +1,21 @@
-var gulp= require('gulp'),
-
-browserSync=require('browser-sync').create();
+var gulp= require('gulp');
+var browserSync=require('browser-sync').create();
+var styles=require('./styles');
 function cssInject(){
-    return gulp.src('./app/temp/styles/styles.css')
+    return gulp.src('./docs/temp/styles/styles.css')
       .pipe(browserSync.stream());
-}  
-function watch(cb){
+}
+module.exports = function(cb){
     browserSync.init({
-      notify:false,
-      server: {
-            baseDir: "app"
+        notify:false,
+        server:{
+            baseDir: "docs"
         }
     });
-    gulp.watch('./app/index.html',function(cb){
-      browserSync.reload();
-      cb();
+    gulp.watch('./docs/**/*.html',function(cb){
+        browserSync.reload();
+        cb();
     });
-    gulp.watch('./app/assets/styles/**/*.css',gulp.series(styles,cssInject));
+    gulp.watch('./docs/assets/styles/**/*.css',gulp.series(styles,cssInject));
     cb();
-  }
-  exports.watch=watch;
+}

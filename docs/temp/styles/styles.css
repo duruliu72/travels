@@ -830,13 +830,17 @@ a{
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0px 18px 1px 18px;
     margin-bottom: 98px;
+    margin-left: -18px;
+    margin-right: -18px;
 }
 
 @media (min-width:1010px){
 
 .testimonial{
         padding: 0px 1.8125rem 1px 1.8125rem;
-        margin-bottom: 0
+        margin-bottom: 0;
+        margin-left: 0px;
+        margin-right: 0px
 }
     }
 
@@ -869,5 +873,27 @@ a{
         font-size:.9375rem;
         font-weight:400;
         margin:.25rem 0 1rem 0;
+    }
+
+.site-footer{
+    background-color: #2f5572;
+    color:#FFF;
+    padding:0.5rem 0;
+    text-align:center;
+}
+
+.site-footer__text{
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 200;
+    }
+
+@media (min-width:800px){
+
+.site-footer__text{
+            display: inline;
+            margin-bottom: 0;
+            margin-right:1.4rem
+    }
     }
 

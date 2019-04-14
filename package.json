@@ -3,14 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duruliu72/travels.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duruliu72/travels/issues"
+  },
+  "homepage": "https://github.com/duruliu72/travels#readme",
   "devDependencies": {
-    "autoprefixer": "^9.5.0",
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-postcss": "^8.0.0",
@@ -20,7 +31,6 @@
     "postcss-simple-vars": "^5.0.2"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
     "normalize.css": "^8.0.1"
   }
 }
