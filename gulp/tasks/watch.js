@@ -12,6 +12,7 @@ module.exports = function(cb){
             baseDir: "docs"
         }
     });
+    
     gulp.watch('./docs/**/*.html',function(cb){
         browserSync.reload();
         cb();
