@@ -16,6 +16,6 @@ module.exports = function(cb){
     });
     gulp.watch('./docs/**/*.html').on('change',browserSync.reload);
     gulp.watch('./docs/assets/styles/**/*.css',gulp.series(styles,cssInject));
-    gulp.watch('./docs/assets/scripts/**/*.js',scripts).on('change',browserSync.reload);
+    gulp.watch('./docs/assets/scripts/**/*.js').on('change',gulp.series(scripts,browserSync.reload));
     cb();
 }

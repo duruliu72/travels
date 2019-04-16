@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/duruliu72/travels#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
@@ -29,11 +31,11 @@
     "postcss-mixins": "^6.2.1",
     "postcss-nested": "^4.1.2",
     "postcss-simple-vars": "^5.0.2",
-    "webpack": "^4.30.0"
+    "webpack": "^4.30.0",
+    "postcss-hexrgba": "^1.0.1"
   },
   "dependencies": {
     "jquery": "^3.4.0",
-    "normalize.css": "^8.0.1",
-    "postcss-hexrgba": "^1.0.1"
+    "normalize.css": "^8.0.1"
   }
 }
