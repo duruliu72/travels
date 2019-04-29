@@ -1004,3 +1004,16 @@ a{
         padding: 12px 0px;
         display: block;
     }
+
+.revel-item{
+    opacity: 0;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    transition:all 1.5s ease-out;
+}
+
+.revel-item--is-visible{
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
